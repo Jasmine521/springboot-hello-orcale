@@ -1,0 +1,15 @@
+{% extends "_base.html" %}
+
+{% block main %}
+
+<h3>Profile</h3>
+
+<p><img class="rounded" style="width:80px;height:80px" src={{user.imageUrl}}></p>
+
+<p>Email: {{ user.email }}</p>
+<p>Name: {{ user.name }}</p>
+<p>Registered at: {{ user.createdDateTime }}</p>
+<div class="form-group">
+    <a href="/resetPassword">Want to ResetPassword?</a>
+</div>
+{% endblock %}
